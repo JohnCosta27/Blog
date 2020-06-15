@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Post</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<style>
+  body {
+    overflow: hidden;
+  }
+</style>
+
+<body>
+
+  <div id="mainDiv">
+
+
+    <br>
+    <div id="titleHolder">
+      <p class="centeredTitleText">Create new post</p>
+    </div>
+    <div id="createPostWrapper">
+
+    <input class="createPostElements" id="createPostTitle" type="text" placeholder="Title...">
+    <br><br>
+    <textarea type="text" class="createPostElements" id="createPostContent" placeholder="This is the content of a post..."></textarea>
+
+    </div>
+
+    <input id="submitButton" type="button" value="Create" onclick="submitPost()">
+
+
+  </div>
+
+  <a href="index.html">
+    <div id="backToMain" class="bottomRightButton">
+    </div>
+  </a>
+
+</body>
+
+</html>

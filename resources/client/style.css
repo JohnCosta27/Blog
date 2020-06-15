@@ -1,0 +1,261 @@
+@font-face {
+  font-family: LightFont;
+  src: url(fonts/TitilliumWeb-Light.ttf);
+}
+
+/*
+Classes and styling for the blog posts being displayed on the main page.
+*/
+
+#mainDiv {
+  background-color: #212121;
+  width: 80%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.mainPostWrapper {
+  width: 100%;
+  height: 300px;
+  background-color: #424242;
+  margin-bottom: 10px;
+}
+
+.mainPostTitle {
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+}
+
+.postTitleText {
+  font-family: LightFont;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #edf0f1;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.mainPostContent {
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+}
+
+.postContentText {
+  font-family: LightFont;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #edf0f1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.postTitleAuthorText {
+  font-family: LightFont;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #CCCCCC;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.postTitleAuthorName {
+  font-family: LightFont;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #edf0f1;
+  display: inline-block;
+}
+
+/*
+Displays the button on index.html
+*/
+
+.bottomRightButton {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  transform: translate(-99%; -97%);
+
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+
+  cursor: pointer;
+}
+
+#createPost {
+  background-image: url("images/createpost.png");
+}
+
+#backToMain {
+  background-image: url("images/backtomain.png");
+}
+
+a {
+  text-decoration: none;
+}
+
+.bottomLeftButton {
+  width: 120px;
+  height: 50px;
+  position: fixed;
+  bottom: 3%;
+  left: 1.5%;
+  transform: translate(-99%; -97%);
+  background-color: #edf0f1;
+  cursor: pointer;
+  border-radius: 2px;
+  border-color: #212121;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.buttonText {
+  font-family: LightFont;
+  text-align: center;
+  color: #212121;
+  font-size: 30px;
+  margin-top: 2px;
+}
+
+/*
+Items for the "post.html" page
+*/
+
+#createPostWrapper {
+  width: 90%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.createPostElements {
+  width: 100%;
+  border-width: 0px;
+  background-color: #212121;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #edf0f1;
+  font-family: LightFont;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#createPostTitle {
+  font-size: 48px;
+  color: #edf0f1;
+}
+
+#createPostContent {
+  font-size: 24px;
+  color: #edf0f1;
+  height: 80%;
+  resize: none;
+}
+
+#titleHolder {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+}
+
+.centeredTitleText {
+  font-family: LightFont;
+  text-align: center;
+  font-size: 52px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: #edf0f1;
+}
+
+#submitButton {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 98%;
+  transform: translate(0%, -98%);
+  font-family: LightFont;
+  border: none;
+  font-size: 48px;
+  background-color: #424242;
+  color: #edf0f1;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#submitButton:hover {
+  color: #424242;
+  background-color: #edf0f1;
+}
+
+/*
+CSS for the auth.html page
+*/
+
+#authMainDiv {
+  width: 40%;
+  height: 540px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #424242;
+  display: inline-block;
+}
+
+.authLabelText {
+  font-family: LightFont;
+  font-size: 48px;
+  font-weight: bold;
+  margin-left: 2%;
+  color: #edf0f1;
+  margin-bottom: 2%;
+}
+
+.authInputText {
+  width: 94%;
+  border-width: 0px;
+  background-color: #212121;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #edf0f1;
+  font-family: LightFont;
+  font-size: 36px;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-left: 2%;
+}
+
+#loginButton {
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  border: 0;
+  background-color: #edf0f1;
+  font-family: LightFont;
+  font-size: 36px;
+  position: absolute;
+  bottom: 5%;
+  color: #212121;
+  transition: background-color 0.1s ease-in-out;
+}
+
+#loginButton:hover {
+  background-color: #212121;
+  color: #edf0f1;
+}
