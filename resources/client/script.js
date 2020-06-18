@@ -1,3 +1,5 @@
+//This script is what makes the website run.
+
 let seconds = 1000;
 let minutes = 60000;
 let hours = 3600000;
